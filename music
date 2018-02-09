@@ -1,0 +1,121 @@
+#Epilogue
+#https://musescore.com/user/8218716/scores/4354151
+
+use_bpm 95
+sleep 1
+use_synth :piano
+
+play :Db4, sustain: 1
+sleep 1
+play :Gb4, sustain: 1
+sleep 1
+play :Ab4, sustain: 1
+sleep 1
+play :A4, sustain: 1
+sleep 1
+play :Ab4, sustain: 1
+sleep 1
+play :Gb4, sustain: 1
+sleep 1
+play :D4, sustain: 4
+sleep 4
+play :D4, sustain: 1
+sleep 1
+play :Gb4, sustain: 1
+sleep 1
+play :Ab4, sustain: 1
+sleep 1
+play :A4, sustain: 1
+sleep 1
+play :Ab4, sustain: 1
+sleep 1
+play :Gb4, sustain: 2
+sleep 2
+play :Db4, sustain: 5
+sleep 5
+
+play :Db4, sustain: 1, amp: 1.5
+play :A3, sustain: 1, amp: 1.5
+sleep 1
+play :Gb4, sustain: 1, amp: 1.5
+sleep 1
+play :Ab4, sustain: 1, amp: 1.5
+play :Gb3, sustain: 1, amp: 1.5
+sleep 1
+play :A4, sustain: 1, amp: 1.5
+sleep 1
+play :Ab4, sustain: 1, amp: 1.5
+sleep 1
+play :Gb4, sustain: 1, amp: 1.5
+sleep 1
+play :D4, sustain: 1, amp: 1.5
+play :B2, sustain: 1, amp: 1.5
+sleep 2
+play :Gb3, sustain: 6, amp: 1.5
+play :A2, sustain: 1, amp: 1.5
+sleep 1
+play :B2, sustain: 1, amp: 1.5
+sleep 1
+play :B3, sustain: 1, amp: 1.5
+play :B4, sustain: 1, amp: 1.5
+play :E2, sustain: 1, amp: 1.5
+sleep 1
+play :A3, sustain: 1, amp: 1.5
+sleep 1
+play :Ab3, sustain: 1, amp: 1
+play :Ab4, sustain: 1, amp: 1
+play :Ab2, sustain: 1, amp: 1
+play :E2, sustain: 1, amp: 1
+sleep 1
+play :A3, sustain: 1, amp: 1.5
+sleep 1
+play :Ab3, sustain: 1, amp: 1
+play :Ab4, sustain: 1, amp: 1
+play :Ab2, sustain: 1, amp: 1
+play :E2, sustain: 1, amp: 1
+sleep 1
+play :Db3, sustain: 1, amp: 1.5
+sleep 1
+play :Db4, sustain: 1, amp: 1.5
+play :Db3, sustain: 1, amp: 1.5
+play :A2, sustain: 1, amp: 1.5
+sleep 2
+play :E2, sustain: 1, amp: 1.5
+play :E3, sustain: 1, amp: 1.5
+sleep 1
+play :Gb2, sustain: 1, amp: 1.5
+play :Gb3, sustain: 1, amp: 1.5
+sleep 1
+play :Ab2, sustain: 1, amp: 1.5
+play :Ab3, sustain: 1, amp: 1.5
+sleep 1
+play :A2, sustain: 1, amp: 1.5
+play :A3, sustain: 1, amp: 1.5
+
+sleep 1.2
+play :B2, sustain: 1, amp: 1.5
+play :D4, sustain: 1, amp: 1.5
+sleep 1
+play :Db4, sustain: 1, amp: 1.5
+sleep 1
+play :A3, sustain: 1, amp: 1.5
+play :D3, sustain: 1, amp: 1.5
+play :B4, sustain: 1, amp: 1.5
+sleep 1
+play :Db4, sustain: 1, amp: 1.5
+sleep 1
+play :A3, sustain: 1, amp: 1.5
+play :D3, sustain: 1, amp: 1.5
+play :B4, sustain: 1, amp: 1.5
+sleep 1
+play :A4, sustain: 1, amp: 1.5
+sleep 1
+play :Gb4, sustain: 1, amp: 1.5
+play :E3, sustain: 1, amp: 1.5
+sleep 2
+play :A3, sustain: 1, amp: 1.5
+play :D3, sustain: 1, amp: 1.5
+sleep 1
+play :Ab3, sustain: 1, amp: 1.5
+play :B3, sustain: 1, amp: 1.5
+sleep 1
