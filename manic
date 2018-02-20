@@ -1,0 +1,124 @@
+#Maniac
+#https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0047902
+use_bpm 157
+sleep 1
+i = 0
+y = 0
+n = [:Fb5, :Bb4, :Eb5, :Bb4]
+o = [:Fb5, :Cb5, :Eb5, :Cb5]
+t = [:Fb5, :Ab4, :Eb5, :Ab4]
+e = [:Fb5, :Ab4, :Db5, :Eb5]
+s = [0.6]
+
+use_synth :tech_saws
+
+3.times do
+  play n[i], amp: 1, pitch: 2
+  sleep s[y]
+  i = i+1
+end
+i = 0
+3.times do
+  play o[i], amp: 1, pitch: 2
+  sleep s[y]
+  i = i+1
+end
+i = 0
+3.times do
+  play t[i], amp: 1, pitch: 2
+  sleep s[y]
+  i = i+1
+end
+i = 0
+3.times do
+  play e[i], amp: 1, pitch: 2
+  sleep s[y]
+  i = i+1
+end
+sleep 2
+1.times do
+  sample :drum_roll
+  sleep 1
+end
+
+sleep 20
+live_loop :piano do
+  3.times do
+    play n[i], amp: 1, pitch: 2
+    sleep s[y]
+    i = i+1
+  end
+  i = 0
+  3.times do
+    play o[i], amp: 1, pitch: 2
+    sleep s[y]
+    i = i+1
+  end
+  i = 0
+  3.times do
+    play t[i], amp: 1, pitch: 2
+    sleep s[y]
+    i = i+1
+  end
+  i = 0
+  3.times do
+    play e[i], amp: 1, pitch: 2
+    sleep s[y]
+    i = i+1
+  end
+  i = 0
+end
+
+live_loop :saw do
+  sync :piano
+  use_synth :saw
+  play :a3, pitch: -3, amp: 0.3
+  sleep 0.2
+  play :b3, pitch: -3, amp: 0.3
+  sleep 0.2
+  play :c4, pitch: -3, amp: 0.3
+  sleep 0.2
+  play :a3, pitch: -3, amp: 0.3
+  sleep 0.6
+  play :b3, pitch: -3, amp: 0.3
+  sleep 0.2
+  play :c4, pitch: -3, amp: 0.3
+  sleep 0.2
+  sleep 4.5
+end
+live_loop :drum do
+  sync :piano
+  sample :drum_snare_soft, amp: 2
+  sleep 1
+  sample :drum_bass_soft, amp: 3
+  sleep 1
+end
+live_loop :hi do
+  sync :kick
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 1
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 0.25
+  sample :drum_cowbell, amp: 0.2
+  sleep 4
+end
+live_loop :kick do
+  sync :drum
+  sample :drum_heavy_kick, amp: 3
+  sleep 2
+end
+live_loop :bass do
+  use_synth :fm
+  play :d2, attack: 0, release: 0.25
+  sleep 0.5
+end
