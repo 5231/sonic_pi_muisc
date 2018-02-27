@@ -9,28 +9,28 @@ t = [:Fb5, :Ab4, :Eb5, :Ab4]
 e = [:Fb5, :Ab4, :Db5, :Eb5]
 s = 0.5
 
-use_synth :blade
+use_synth :prophet
 
 4.times do
-  play n[i], amp: 3, pitch: 2
+  play n[i], amp: 3
   sleep s
   i = i+1
 end
 i = 0
 4.times do
-  play o[i], amp: 3, pitch: 2
+  play o[i], amp: 3
   sleep s
   i = i+1
 end
 i = 0
 4.times do
-  play t[i], amp: 3, pitch: 2
+  play t[i], amp: 3
   sleep s
   i = i+1
 end
 i = 0
 4.times do
-  play e[i], amp: 3, pitch: 2
+  play e[i], amp: 3
   sleep s
   i = i+1
 end
@@ -39,39 +39,38 @@ i = 0
 use_bpm 120
 use_synth :tri
 x = 42
-31.times do
+21.times do
   play x
   sleep 0.25
   x = x+1
 end
-sleep 3
 
 use_bpm 157
 
-use_synth :blade
-
+use_synth :prophet
 
 live_loop :piano do
+  use_synth_defaults release: 1, cutoff: rrand(90,120)
   4.times do
-    play n[i], amp: 2, pitch: 2
+    play n[i], amp: 2
     sleep s
     i = i+1
   end
   i = 0
   4.times do
-    play o[i], amp: 2, pitch: 2
+    play o[i], amp: 2
     sleep s
     i = i+1
   end
   i = 0
   4.times do
-    play t[i], amp: 2, pitch: 2
+    play t[i], amp: 2
     sleep s
     i = i+1
   end
   i = 0
   4.times do
-    play e[i], amp: 2, pitch: 2
+    play e[i], amp: 2
     sleep s
     i = i+1
   end
