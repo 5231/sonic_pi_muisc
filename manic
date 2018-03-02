@@ -8,9 +8,14 @@ o = [:Fb5, :Cb5, :Eb5, :Cb5]
 t = [:Fb5, :Ab4, :Eb5, :Ab4]
 e = [:Fb5, :Ab4, :Db5, :Eb5]
 s = 0.5
+b = 16.3
+p = 16.3
+yea = "C:/Users/roberto_gongora/Desktop/Music/wow/yea.wav"
+tron = "C:/Users/roberto_gongora/Desktop/Music/tron.wav"
+whoa = "C:/Users/roberto_gongora/Desktop/Music/wow/whoa.wav"
 
 use_synth :prophet
-
+=begin
 4.times do
   play n[i], amp: 3
   sleep s
@@ -35,15 +40,20 @@ i = 0
   i = i+1
 end
 i = 0
-
-use_bpm 120
-use_synth :tri
-x = 42
-21.times do
-  play x
-  sleep 0.25
-  x = x+1
+=end
+5.times do
+  sample yea, beat_stretch: b, amp: 2
+  sleep p
+  p = p-1
+  b = b-1
 end
+sleep 0.16
+sample whoa, amp: 2
+sleep 48.3
+sample tron, amp: 3
+
+
+=begin
 
 use_bpm 157
 
@@ -95,3 +105,20 @@ live_loop :bass do
   play :d2, attack: 0, release: 0.25, amp: 2
   sleep 0.5
 end
+
+define :chord_player do |root, repeats|
+  repeats.times do
+    play chord(root, :minor), release: 0.3
+    sleep 0.5
+  end
+end
+live_loop :fun do
+chord_player :e3, 2
+sleep 0.5
+chord_player :d3, 3
+chord_player :f3, 4
+sleep 0.5
+chord_player :e3, 3
+sleep 0.5
+end
+=end
