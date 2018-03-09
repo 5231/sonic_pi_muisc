@@ -8,11 +8,11 @@ o = [:Fb5, :Cb5, :Eb5, :Cb5]
 t = [:Fb5, :Ab4, :Eb5, :Ab4]
 e = [:Fb5, :Ab4, :Db5, :Eb5]
 s = 0.5
-b = 28.3
+b = 32.3
 Stronger = "C:/Users/roberto_gongora/Desktop/Music/wow/strong.wav"
 whoa = "C:/Users/roberto_gongora/Desktop/Music/wow/whoa.wav"
 alright = "C:/Users/roberto_gongora/Desktop/Music/wow/alright.wav"
-
+Tron = "C:/Users/roberto_gongora/Desktop/Music/wow/Tron.wav"
 use_synth :prophet
 =begin
 4.times do
@@ -41,18 +41,21 @@ end
 i = 0
 =end
 live_loop :banger do
-  b = 28.3
+  sample Tron, amp: 2, beat_stretch: 16.3
+  b = 32.3
+  sleep 16.5
   5.times do
     sample Stronger, beat_stretch: b, amp: 2
     sleep b
-    b = b-1
+    b = b-2
   end
   sleep 0.10
   sample whoa, amp: 2
   sleep 48.3
   sample alright, amp: 3
-  sleep 52
+  sleep 50
 end
+
 =begin
 
 use_bpm 157
